@@ -1,0 +1,17 @@
+# pytest
+.pytest_cache/
+
+# Python
+__pycache__/
+
+# Node.js
+node_modules
+
+# IDE
+.vscode/
+
+# All csv files
+*.csv
+
+# .env file for credentials
+.env

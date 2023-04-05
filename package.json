@@ -1,0 +1,20 @@
+{
+  "name": "jurishand",
+  "version": "1.0.0",
+  "description": "jurishand backend challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "ThiagoSlvr",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  }
+}
