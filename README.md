@@ -25,9 +25,10 @@ The server allows users to retrieve all articles sorted by publication date, fil
 
 1. Clone this repository
 2. Install dependencies by running `npm install`
-3. Create the MySQL database by running the `schema.sql` script in your MySQL server
-4. Create a `.env` file based on the `.env.example` file and fill it with your MySQL server credentials
-5. Start the server by running `npm start`
+3. Create the MySQL database. 
+4. Create a MySQL table and populate it by running the `schema.sql` script in your MySQL server. Example: 'source /path/to/schema.sql;'
+5. Create a `.env` file based on the `.env.example` file and fill it with your MySQL server credentials.
+6. Start the server by running `npm start`
 
 ## API Usage
 
@@ -104,7 +105,7 @@ This script connects to the RESTful API, the script retrieves data, performs som
 1. Clone the repository or download the `report_generator.py` file.
 2. Install the required package by running the command `pip install requests`.
 3. Make sure that the API server is running.
-4. Run the script using the command `python report_generator.py`.
+4. Run the script using the command `python3 report_generator.py`.
 5. The report will be saved as a CSV file with the current date and time as the filename.
 
 ## Report Information
@@ -158,11 +159,13 @@ These codes are a tests suites for the API endpoints defined in server.js and te
 
 ### api.test.js
 
-1. To run the tests, simply execute 'npm test'. Jest will automatically run all the tests in the project.
+1. In this test make sure that the server is NOT currently running.
+2. To run the tests, simply execute 'npm test'. Jest will automatically run all the tests in the project.
 
 ### test_report.py
 
-1. To run the tests, simply execute 'pytest'. Pytest will automatically run all the tests in the project.
+1. In this one make sure that the server IS currently running.
+2. To run the tests, simply execute 'pytest'. Pytest will automatically run all the tests in the project.
 
 
 # Credits

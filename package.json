@@ -4,7 +4,7 @@
   "description": "jurishand backend challenge",
   "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --forceExit"
   },
   "author": "ThiagoSlvr",
   "license": "ISC",
